@@ -2,10 +2,10 @@ package Bridglabz;
 import java.util.regex.*;
 
 public class User {
-    static Pattern pattern=Pattern.compile("^[A-Z][a-z]{3,}");
+    static Pattern pattern=Pattern.compile("^(.+)@(.+)$");
     public static void main(String[] args){
             System.out.println("welcome to regex program");
-            String lastName="Patil";
+            String lastName="neha1.xyz@bl.co.in";
             Matcher matcher = pattern.matcher(lastName);
             if (matcher.matches()) {
                 System.out.println("valid");
